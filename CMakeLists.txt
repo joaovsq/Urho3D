@@ -23,6 +23,9 @@
 # Set CMake minimum version
 cmake_minimum_required (VERSION 3.10.2)
 
+# The cpp standard
+set (CMAKE_CXX_STANDARD 17)
+
 # Set project name
 project (Urho3D)
 
@@ -185,4 +188,4 @@ file (MAKE_DIRECTORY ${THIRD_PARTY_INCLUDE_DIR})
 add_subdirectory (Source)
 
 # Urho3D documentation
-add_subdirectory (Docs)
+# add_subdirectory (Docs)
