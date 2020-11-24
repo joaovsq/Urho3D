@@ -133,49 +133,49 @@ public:
     Renderer* GetRenderer() const;
 
     /// Return scene.
-    Scene* GetScene() const { return scene_; }
+    inline Scene* GetScene() const { return scene_; }
 
     /// Return octree.
-    Octree* GetOctree() const { return octree_; }
+    inline Octree* GetOctree() const { return octree_; }
 
     /// Return viewport camera.
-    Camera* GetCamera() const { return camera_; }
+    inline Camera* GetCamera() const { return camera_; }
 
     /// Return culling camera. Normally same as the viewport camera.
-    Camera* GetCullCamera() const { return cullCamera_; }
+    inline Camera* GetCullCamera() const { return cullCamera_; }
 
     /// Return information of the frame being rendered.
-    const FrameInfo& GetFrameInfo() const { return frame_; }
+    inline const FrameInfo& GetFrameInfo() const { return frame_; }
 
     /// Return the rendertarget. 0 if using the backbuffer.
-    RenderSurface* GetRenderTarget() const { return renderTarget_; }
+    inline RenderSurface* GetRenderTarget() const { return renderTarget_; }
 
     /// Return whether should draw debug geometry.
     bool GetDrawDebug() const { return drawDebug_; }
 
     /// Return view rectangle.
-    const IntRect& GetViewRect() const { return viewRect_; }
+    inline const IntRect& GetViewRect() const { return viewRect_; }
 
     /// Return view dimensions.
-    const IntVector2& GetViewSize() const { return viewSize_; }
+    inline const IntVector2& GetViewSize() const { return viewSize_; }
 
     /// Return geometry objects.
-    const PODVector<Drawable*>& GetGeometries() const { return geometries_; }
+    inline const PODVector<Drawable*>& GetGeometries() const { return geometries_; }
 
     /// Return occluder objects.
-    const PODVector<Drawable*>& GetOccluders() const { return occluders_; }
+    inline const PODVector<Drawable*>& GetOccluders() const { return occluders_; }
 
     /// Return lights.
-    const PODVector<Light*>& GetLights() const { return lights_; }
+    inline const PODVector<Light*>& GetLights() const { return lights_; }
 
     /// Return light batch queues.
-    const Vector<LightBatchQueue>& GetLightQueues() const { return lightQueues_; }
+    inline const Vector<LightBatchQueue>& GetLightQueues() const { return lightQueues_; }
 
     /// Return the last used software occlusion buffer.
-    OcclusionBuffer* GetOcclusionBuffer() const { return occlusionBuffer_; }
+    inline OcclusionBuffer* GetOcclusionBuffer() const { return occlusionBuffer_; }
 
     /// Return number of occluders that were actually rendered. Occluders may be rejected if running out of triangles or if behind other occluders.
-    unsigned GetNumActiveOccluders() const { return activeOccluders_; }
+    inline unsigned GetNumActiveOccluders() const { return activeOccluders_; }
 
     /// Return the source view that was already prepared. Used when viewports specify the same culling camera.
     View* GetSourceView() const;

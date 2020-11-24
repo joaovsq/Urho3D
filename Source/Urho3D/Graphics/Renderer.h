@@ -283,7 +283,7 @@ public:
 
     /// Return number of backbuffer viewports.
     /// @property
-    unsigned GetNumViewports() const { return viewports_.Size(); }
+    inline unsigned GetNumViewports() const { return viewports_.Size(); }
 
     /// Return backbuffer viewport by index.
     /// @property{get_viewports}
@@ -299,115 +299,115 @@ public:
 
     /// Return whether HDR rendering is enabled.
     /// @property{get_hdrRendering}
-    bool GetHDRRendering() const { return hdrRendering_; }
+    inline bool GetHDRRendering() const { return hdrRendering_; }
 
     /// Return whether specular lighting is enabled.
     /// @property
-    bool GetSpecularLighting() const { return specularLighting_; }
+    inline bool GetSpecularLighting() const { return specularLighting_; }
 
     /// Return whether drawing shadows is enabled.
     /// @property
-    bool GetDrawShadows() const { return drawShadows_; }
+    inline bool GetDrawShadows() const { return drawShadows_; }
 
     /// Return default texture max. anisotropy level.
     /// @property
-    int GetTextureAnisotropy() const { return textureAnisotropy_; }
+    inline int GetTextureAnisotropy() const { return textureAnisotropy_; }
 
     /// Return default texture filtering mode.
     /// @property
-    TextureFilterMode GetTextureFilterMode() const { return textureFilterMode_; }
+    inline TextureFilterMode GetTextureFilterMode() const { return textureFilterMode_; }
 
     /// Return texture quality level.
     /// @property
-    MaterialQuality GetTextureQuality() const { return textureQuality_; }
+    inline MaterialQuality GetTextureQuality() const { return textureQuality_; }
 
     /// Return material quality level.
     /// @property
-    MaterialQuality GetMaterialQuality() const { return materialQuality_; }
+    inline MaterialQuality GetMaterialQuality() const { return materialQuality_; }
 
     /// Return shadow map resolution.
     /// @property
-    int GetShadowMapSize() const { return shadowMapSize_; }
+    inline int GetShadowMapSize() const { return shadowMapSize_; }
 
     /// Return shadow quality.
     /// @property
-    ShadowQuality GetShadowQuality() const { return shadowQuality_; }
+    inline ShadowQuality GetShadowQuality() const { return shadowQuality_; }
 
     /// Return shadow softness.
     /// @property
-    float GetShadowSoftness() const { return shadowSoftness_; }
+    inline float GetShadowSoftness() const { return shadowSoftness_; }
 
     /// Return VSM shadow parameters.
     /// @property{get_vsmShadowParameters}
-    Vector2 GetVSMShadowParameters() const { return vsmShadowParams_; };
+    inline Vector2 GetVSMShadowParameters() const { return vsmShadowParams_; };
 
     /// Return VSM shadow multisample level.
     /// @property{get_vsmMultiSample}
-    int GetVSMMultiSample() const { return vsmMultiSample_; }
+    inline int GetVSMMultiSample() const { return vsmMultiSample_; }
 
     /// Return whether shadow maps are reused.
     /// @property
-    bool GetReuseShadowMaps() const { return reuseShadowMaps_; }
+    inline bool GetReuseShadowMaps() const { return reuseShadowMaps_; }
 
     /// Return maximum number of shadow maps per resolution.
     /// @property
-    int GetMaxShadowMaps() const { return maxShadowMaps_; }
+    inline int GetMaxShadowMaps() const { return maxShadowMaps_; }
 
     /// Return whether dynamic instancing is in use.
     /// @property
-    bool GetDynamicInstancing() const { return dynamicInstancing_; }
+    inline bool GetDynamicInstancing() const { return dynamicInstancing_; }
 
     /// Return number of extra instancing buffer elements.
     /// @property
-    int GetNumExtraInstancingBufferElements() const { return numExtraInstancingBufferElements_; };
+    inline int GetNumExtraInstancingBufferElements() const { return numExtraInstancingBufferElements_; };
 
     /// Return minimum number of instances required in a batch group to render as instanced.
     /// @property
-    int GetMinInstances() const { return minInstances_; }
+    inline int GetMinInstances() const { return minInstances_; }
 
     /// Return maximum number of sorted instances per batch group.
     /// @property
-    int GetMaxSortedInstances() const { return maxSortedInstances_; }
+    inline int GetMaxSortedInstances() const { return maxSortedInstances_; }
 
     /// Return maximum number of occluder triangles.
     /// @property
-    int GetMaxOccluderTriangles() const { return maxOccluderTriangles_; }
+    inline int GetMaxOccluderTriangles() const { return maxOccluderTriangles_; }
 
     /// Return occlusion buffer width.
     /// @property
-    int GetOcclusionBufferSize() const { return occlusionBufferSize_; }
+    inline int GetOcclusionBufferSize() const { return occlusionBufferSize_; }
 
     /// Return occluder screen size threshold.
     /// @property
-    float GetOccluderSizeThreshold() const { return occluderSizeThreshold_; }
+    inline float GetOccluderSizeThreshold() const { return occluderSizeThreshold_; }
 
     /// Return whether occlusion rendering is threaded.
     /// @property
-    bool GetThreadedOcclusion() const { return threadedOcclusion_; }
+    inline bool GetThreadedOcclusion() const { return threadedOcclusion_; }
 
     /// Return shadow depth bias multiplier for mobile platforms.
     /// @property
-    float GetMobileShadowBiasMul() const { return mobileShadowBiasMul_; }
+    inline float GetMobileShadowBiasMul() const { return mobileShadowBiasMul_; }
 
     /// Return shadow depth bias addition for mobile platforms.
     /// @property
-    float GetMobileShadowBiasAdd() const { return mobileShadowBiasAdd_; }
+    inline float GetMobileShadowBiasAdd() const { return mobileShadowBiasAdd_; }
 
     /// Return shadow normal offset multiplier for mobile platforms.
     /// @property
-    float GetMobileNormalOffsetMul() const { return mobileNormalOffsetMul_; }
+    inline float GetMobileNormalOffsetMul() const { return mobileNormalOffsetMul_; }
 
     /// Return number of views rendered.
     /// @property
-    unsigned GetNumViews() const { return views_.Size(); }
+    inline unsigned GetNumViews() const { return views_.Size(); }
 
     /// Return number of primitives rendered.
     /// @property
-    unsigned GetNumPrimitives() const { return numPrimitives_; }
+    inline unsigned GetNumPrimitives() const { return numPrimitives_; }
 
     /// Return number of batches rendered.
     /// @property
-    unsigned GetNumBatches() const { return numBatches_; }
+    inline unsigned GetNumBatches() const { return numBatches_; }
 
     /// Return number of geometries rendered.
     /// @property
@@ -424,31 +424,31 @@ public:
 
     /// Return the default zone.
     /// @property
-    Zone* GetDefaultZone() const { return defaultZone_; }
+    inline Zone* GetDefaultZone() const { return defaultZone_; }
 
     /// Return the default material.
     /// @property
-    Material* GetDefaultMaterial() const { return defaultMaterial_; }
+    inline Material* GetDefaultMaterial() const { return defaultMaterial_; }
 
     /// Return the default range attenuation texture.
     /// @property
-    Texture2D* GetDefaultLightRamp() const { return defaultLightRamp_; }
+    inline Texture2D* GetDefaultLightRamp() const { return defaultLightRamp_; }
 
     /// Return the default spotlight attenuation texture.
     /// @property
-    Texture2D* GetDefaultLightSpot() const { return defaultLightSpot_; }
+    inline Texture2D* GetDefaultLightSpot() const { return defaultLightSpot_; }
 
     /// Return the shadowed pointlight face selection cube map.
-    TextureCube* GetFaceSelectCubeMap() const { return faceSelectCubeMap_; }
+    inline TextureCube* GetFaceSelectCubeMap() const { return faceSelectCubeMap_; }
 
     /// Return the shadowed pointlight indirection cube map.
-    TextureCube* GetIndirectionCubeMap() const { return indirectionCubeMap_; }
+    inline TextureCube* GetIndirectionCubeMap() const { return indirectionCubeMap_; }
 
     /// Return the instancing vertex buffer.
-    VertexBuffer* GetInstancingBuffer() const { return dynamicInstancing_ ? instancingBuffer_.Get() : nullptr; }
+    inline VertexBuffer* GetInstancingBuffer() const { return dynamicInstancing_ ? instancingBuffer_.Get() : nullptr; }
 
     /// Return the frame update parameters.
-    const FrameInfo& GetFrameInfo() const { return frame_; }
+    inline const FrameInfo& GetFrameInfo() const { return frame_; }
 
     /// Update for rendering. Called by HandleRenderUpdate().
     void Update(float timeStep);
