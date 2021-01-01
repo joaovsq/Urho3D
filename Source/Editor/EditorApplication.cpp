@@ -7,7 +7,21 @@
 
 #include "EditorApplication.h"
 
-URHO3D_DEFINE_APPLICATION_MAIN(UrhoEditor::EditorApplication)
+#include <QApplication>
+#include <QPushButton>
+
+int main(int argc, char** argv) {
+    /*Urho3D::ParseArguments(argc, argv);
+    Urho3D::Context* context = new Urho3D::Context();
+    auto application = new UrhoEditor::EditorApplication(context);
+    return application->Run();*/
+
+    QApplication app(argc, argv);
+    QPushButton button("hey ho");
+    button.show();
+
+    return app.exec();
+}
 
 namespace UrhoEditor
 {

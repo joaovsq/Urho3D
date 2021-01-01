@@ -148,10 +148,6 @@ endif ()
 # In order to get clean module segregation, always exclude player/samples from AAR
 if (NOT ANDROID)
     add_subdirectory (Tools)
+    add_subdirectory (Samples)
     add_subdirectory (Editor)
 endif ()
-
-set(URHO3D_BUILD_SAMPLES OFF)
-if(URHO3D_BUILD_SAMPLES)
-    add_subdirectory (Samples)
-endif()
